@@ -3,12 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5854FF58-B8C5-05C6-5BF2-ACE42193F22B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{944ACC7E-4FFC-A2A2-09E1-98A62C66F8DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{795AB34B-D83D-4F56-AB6B-2CDF03C0A699}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{7266C4A9-E384-DC00-0EB6-47F6002CFBA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks.csproj", "{306692FF-B8DF-40B0-B8A7-3C017BD3F449}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{795AB34B-D83D-4F56-AB6B-2CDF03C0A699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795AB34B-D83D-4F56-AB6B-2CDF03C0A699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795AB34B-D83D-4F56-AB6B-2CDF03C0A699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795AB34B-D83D-4F56-AB6B-2CDF03C0A699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306692FF-B8DF-40B0-B8A7-3C017BD3F449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306692FF-B8DF-40B0-B8A7-3C017BD3F449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306692FF-B8DF-40B0-B8A7-3C017BD3F449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306692FF-B8DF-40B0-B8A7-3C017BD3F449}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{944ACC7E-4FFC-A2A2-09E1-98A62C66F8DB} = {5854FF58-B8C5-05C6-5BF2-ACE42193F22B}
+		{795AB34B-D83D-4F56-AB6B-2CDF03C0A699} = {944ACC7E-4FFC-A2A2-09E1-98A62C66F8DB}
+		{306692FF-B8DF-40B0-B8A7-3C017BD3F449} = {7266C4A9-E384-DC00-0EB6-47F6002CFBA7}
 	EndGlobalSection
 EndGlobal
